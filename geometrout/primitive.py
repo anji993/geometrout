@@ -263,6 +263,15 @@ class Cuboid:
         """
         return self.pose.pos
 
+    @center.setter
+    def center(self, val):
+        """
+        Set the center of the cuboid
+
+        :param val: The new center of the cuboid
+        """
+        self.pose.pos = val
+
     @property
     def half_extents(self):
         """
@@ -557,6 +566,15 @@ class Cylinder:
         :return: The center of the object as a list
         """
         return self.pose.pos
+    
+    @center.setter
+    def center(self, val):
+        """
+        Set the center of the cuboid
+
+        :param val: The new center of the cuboid
+        """
+        self.pose.pos = val
 
     @staticmethod
     def random(
